@@ -394,7 +394,7 @@ p {
   font-size: 16px;
   line-height: 1.62;
   border-radius: 4px;
-  border: 0px;
+  border: none;
   background-color: var(--secondary-bg-color);
   color: var(--primary-h-color);
 }
@@ -424,15 +424,10 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .item-borders {
-padding: 20px 24px;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-.projects-portfolio,
-.projects-portfolio-title {
-}
-.projects-portfolio-title {
 }
 .projects-portfolio {
   margin-bottom: 4px;
