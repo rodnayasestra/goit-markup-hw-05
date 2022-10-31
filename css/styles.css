@@ -291,6 +291,21 @@ p {
   gap: 30px;
   justify-content: center;
 }
+.business-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px 0 ;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
 .section-title {
   margin-bottom: 50px;
@@ -417,15 +432,15 @@ p {
 }
 .thumb {
   position: relative;
+  overflow: hidden;
 }
 .project-text {
-  width: 100%;
-  height: 100.1%;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   font-size: 18px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   line-height: calc(28 / 18);
   color: var(--primary-white-color);
   opacity: 0;
@@ -441,6 +456,7 @@ p {
   background-color: var(--primary-white-color);
 }
 .projects-item:hover {
+  transition: 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
