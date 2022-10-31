@@ -415,13 +415,34 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 }
+.thumb {
+  position: relative;
+}
+.project-text {
+  width: 100%;
+  height: 100.1%;
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: calc(28 / 18);
+  color: var(--primary-white-color);
+  opacity: 0;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.project-link:hover .project-text {
+  opacity: 1;
+}
 .projects-item {
   /* количество зазоров в строке умноженное на ширину столбца/количество элементов */
   flex-basis: calc((100% - 2 * 30px) / 3);
   background-color: var(--primary-white-color);
 }
 .projects-item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .item-borders {
   padding: 20px 24px;
