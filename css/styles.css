@@ -32,7 +32,6 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
 }
-
 h1,
 h2,
 h3,
@@ -151,10 +150,9 @@ p {
 .link-contacts {
   display: flex;
   align-items: center;
-
-  fill: currentColor;
 }
 .icons-header {
+  fill: currentColor;
   margin-right: 10px;
   width: 16px;
   height: 16px;
