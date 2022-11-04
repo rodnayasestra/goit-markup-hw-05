@@ -31,6 +31,7 @@ body {
   color: var(--primary-h-color);
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
+  
 }
 h1,
 h2,
@@ -48,6 +49,7 @@ p {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .section {
@@ -115,7 +117,6 @@ p {
 .header-nav .link:focus,
 .header-nav .link-contacts:hover,
 .header-nav .link-contacts:focus {
-  fill: var(--accent-color);
   color: var(--accent-color);
 }
 .header-nav .link-contacts {
@@ -271,6 +272,7 @@ p {
   visibility: hidden;
 }
 .backdrop {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -289,7 +291,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 530px;
   height: 580px;
   background-color: var(--primary-white-color);
