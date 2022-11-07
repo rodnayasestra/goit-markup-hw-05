@@ -14,7 +14,7 @@ a {
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill, color, background-color;
+  transition-property: fill, color, background-color, box-shadow;
 }
 button {
   transition-duration: 250ms;
@@ -31,7 +31,6 @@ body {
   color: var(--primary-h-color);
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
-  
 }
 h1,
 h2,
@@ -49,7 +48,6 @@ p {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .section {
@@ -522,7 +520,11 @@ p {
   background-color: var(--primary-white-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-item:hover {
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
